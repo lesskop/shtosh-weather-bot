@@ -44,7 +44,7 @@ def get_weather(coordinates=Coordinates) -> Weather:
 
 
 def _get_openweather_response(latitude: float, longitude: float) -> str:
-    url = config.WEATHER_URL.format(latitude=latitude, longitude=longitude)
+    url = config.CURRENT_WEATHER_API_CALL.format(latitude=latitude, longitude=longitude)
     return urlopen(url).read()
 
 
@@ -74,7 +74,7 @@ def _parse_temperature_feeling(openweather_dict: dict) -> Celsius:
     return openweather_dict['main']['feels_like']
 
 
-def _parse_description(openweather_dict):
+def _parse_description(openweather_dict) -> str:
     return str(openweather_dict['weather'][0]['description']).capitalize()
 
 
@@ -86,7 +86,7 @@ def _parse_wind_speed(openweather_dict: dict) -> float:
     return openweather_dict['wind']['speed']
 
 
-def _parse_wind_direction(openweather_dict: dict):
+def _parse_wind_direction(openweather_dict: dict) -> str:
     degrees = openweather_dict['wind']['deg']
     degrees = round(degrees / 45) * 45
     if degrees == 360:
