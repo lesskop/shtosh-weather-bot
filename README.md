@@ -31,3 +31,8 @@ _Hint: you can use [temporary mail](https://tempail.com/en/) :)_
 6. Run [bot.py](shtosh-weather-bot/bot.py)
 
 `python .\shtosh-weather-bot\bot.py`
+
+---
+[YouTube video](https://youtu.be/9cOnJLpwbpU)
+
+[Статья на Хабре](https://habr.com/p/684038/)
