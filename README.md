@@ -1,4 +1,4 @@
-# ShtoshWeatherBot
+# IPWeatherBot
 
 Telegram bot that can get the current weather from your IP address
 
@@ -8,7 +8,7 @@ Telegram bot that can get the current weather from your IP address
 
 1. Create a new Telegram bot with [BotFather](https://web.telegram.org/k/#@BotFather)
 
-Copy and paste the API token into [config.py](shtosh-weather-bot/config.py)
+Copy and paste the API token into [config.py](ip-weather-bot/config.py)
 
 `BOT_API_TOKEN = 'Paste your API token here'`
 
@@ -16,7 +16,7 @@ Copy and paste the API token into [config.py](shtosh-weather-bot/config.py)
 
 _Hint: you can use [temporary mail](https://tempail.com/en/) :)_
 
-Сopy and paste the API key into [config.py](shtosh-weather-bot/config.py)
+Сopy and paste the API key into [config.py](ip-weather-bot/config.py)
 
 `WEATHER_API = 'Paste your API key here'`
 
@@ -28,11 +28,8 @@ _Hint: you can use [temporary mail](https://tempail.com/en/) :)_
 
 `pip install -r requirements.txt`
 
-6. Run [bot.py](shtosh-weather-bot/bot.py)
+6. Run [bot.py](ip-weather-bot/bot.py)
 
-`python .\shtosh-weather-bot\bot.py`
+`python .\ip-weather-bot\bot.py`
 
 ---
-[YouTube video](https://youtu.be/9cOnJLpwbpU)
-
-[Статья на Хабре](https://habr.com/p/684038/)
