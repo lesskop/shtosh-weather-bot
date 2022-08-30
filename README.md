@@ -1,4 +1,4 @@
-# ShtoshWeatherBot
+# IPWeatherBot
 
 Telegram bot that can get the current weather from your IP address
 
