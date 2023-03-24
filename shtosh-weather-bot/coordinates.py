@@ -1,6 +1,5 @@
-from urllib.request import urlopen
 from dataclasses import dataclass
-import json
+import aiohttp
 
 
 @dataclass(slots=True, frozen=True)
@@ -9,16 +8,17 @@ class Coordinates:
     longitude: float
 
 
-def get_coordinates() -> Coordinates:
+async def get_coordinates() -> Coordinates:
     """Returns current coordinates using IP address"""
-    data = _get_ip_data()
-    latitude = data['loc'].split(',')[0]
-    longitude = data['loc'].split(',')[1]
+    data = await _get_ip_data()
+    latitude, longitude = map(float, data['loc'].split(','))
 
     return Coordinates(latitude=latitude, longitude=longitude)
 
 
-def _get_ip_data() -> dict:
+async def _get_ip_data() -> dict:
     url = 'http://ipinfo.io/json'
-    response = urlopen(url)
-    return json.load(response)
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            ip_data = await response.json()
+            return ip_data

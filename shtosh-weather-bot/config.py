@@ -6,3 +6,5 @@ CURRENT_WEATHER_API_CALL = (
         'lat={latitude}&lon={longitude}&'
         'appid=' + WEATHER_API_KEY + '&units=metric'
 )
+
+CACHE_TIME = 60 * 5  # In seconds
