@@ -4,33 +4,49 @@ Telegram bot that can get the current weather from your IP address
 
 ![demo](demo.gif)
 
-## Create your own bot
+## Getting started
 
-1. Create a new Telegram bot with [BotFather](https://web.telegram.org/k/#@BotFather)
+1. Clone this repository to your local machine:
 
-Copy and paste the API token into [config.py](shtosh-weather-bot/config.py)
+`git clone https://github.com/lesskop/shtosh-weather-bot.git`
 
-`BOT_API_TOKEN = 'Paste your API token here'`
+2. Install Python 3.10+ version
 
-2. Create an account on [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
+3. Create a virtual environment. Not necessary, but highly recommended.
 
-_Hint: you can use [temporary mail](https://tempail.com/en/) :)_
-
-Сopy and paste the API key into [config.py](shtosh-weather-bot/config.py)
-
-`WEATHER_API = 'Paste your API key here'`
-
-3. Get the latest [Python](https://www.python.org/downloads/) version
-
-4. Create a virtual environment. Not necessary, but highly recommended.
-
-5. Install requirements
+4. Install requirements:
 
 `pip install -r requirements.txt`
 
-6. Run [bot.py](shtosh-weather-bot/bot.py)
+5. Create an `.env` file in the root of your project directory and add your Telegram bot API token:
+
+`BOT_API_TOKEN=bot-token-here`
+
+6. Create an account on [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
+
+*Hint: you can use [temporary mail](https://tempail.com/en/) :)*
+
+Сopy and paste the API key into `.env` file
+
+`WEATHER_API=api-key-here`
+
+7. Run [bot.py](shtosh-weather-bot/bot.py) from project directory:
 
 `python .\shtosh-weather-bot\bot.py`
+
+## Usage
+
+This Telegram bot supports the following commands:
+
+* `/start` - Start the bot and get a welcome message with the weather at your location.
+* `/help` - Display the available commands.
+* `/weather` - Display the weather.
+* `/wind` - Display wind speed and direction.
+* `/sun_time` - Display sunrise and sunset times.
+
+## License
+
+This Telegram bot is open source and available under the [MIT License](LICENCE).
 
 ---
 [YouTube video](https://youtu.be/9cOnJLpwbpU)
