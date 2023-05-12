@@ -1,5 +1,13 @@
 # ShtoshWeatherBot
 
+![GitHub last commit](https://img.shields.io/github/last-commit/lesskop/shtosh-weather-bot?style=flat-square)
+![GitHub](https://img.shields.io/github/license/lesskop/shtosh-weather-bot?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/lesskop/shtosh-weather-bot?style=flat-square)
+
+<a href="https://www.youtube.com/watch?v=9cOnJLpwbpU">
+    <img alt="YouTube Video Views" src="https://img.shields.io/youtube/views/9cOnJLpwbpU?style=social">
+</a>
+
 Telegram bot that can get the current weather from your IP address
 
 ![demo](demo.gif)
